@@ -3,78 +3,112 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Employee Profile - AJHARUL ISLAM</title>
+<title>Employee Verification - AJHARUL ISLAM</title>
 
 <style>
 body {
-  font-family: Arial, sans-serif;
-  background: #f2f5fa;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #e9eef5, #f7f9fc);
   margin: 0;
   padding: 20px;
 }
+
 .container {
-  max-width: 480px;
+  max-width: 520px;
   margin: auto;
-  background: white;
-  padding: 22px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* Header */
 .header {
   text-align: center;
-  padding-bottom: 8px;
-  border-bottom: 2px solid #4a4a4a;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #2f80ed;
 }
 .header h1 {
   margin: 0;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 22px;
+  color: #1a1a1a;
 }
 .header p {
-  margin: 4px 0 8px;
+  margin: 6px 0 0;
   font-size: 14px;
   color: #555;
 }
 
-.section {
-  margin-top: 14px;
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 18px;
 }
+
+.info-box {
+  background: #f4f7fb;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
 .label {
-  font-size: 13px;
-  font-weight: bold;
-  color: #333;
+  font-size: 12px;
+  color: #555;
+  font-weight: 600;
 }
 .value {
   margin-top: 4px;
   font-size: 15px;
   color: #000;
+  font-weight: 700;
+}
+
+/* Rating */
+.rating {
+  margin-top: 14px;
+}
+.rating-stars {
+  color: #e3b341;
+  font-size: 20px;
   font-weight: bold;
 }
 
-.rating-stars {
-  color: #e3b341;
-  font-size: 18px;
+/* Statement */
+.statement-box {
+  margin-top: 20px;
+  padding: 16px;
+  background: #f9fbff;
+  border-left: 5px solid #2f80ed;
+  border-radius: 6px;
 }
-
-.application {
-  margin-top: 16px;
+.statement-title {
   font-size: 14px;
-  line-height: 1.6;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #2f80ed;
+}
+.statement-text {
+  font-size: 14px;
+  line-height: 1.65;
   color: #222;
   text-align: justify;
 }
 
-.hr {
-  margin: 16px 0;
-  border-top: 1px solid #ccc;
-}
-
+/* Footer */
 .footer {
+  margin-top: 22px;
+  padding-top: 10px;
+  border-top: 1px dashed #bbb;
   text-align: center;
-  margin-top: 24px;
   font-size: 12px;
-  color: #777;
+  color: #666;
+}
+.verify {
+  margin-top: 6px;
+  font-weight: bold;
+  color: #2f80ed;
 }
 </style>
 </head>
@@ -82,57 +116,57 @@ body {
 <body>
 
 <div class="container">
+
   <div class="header">
-    <h1>Employee Profile</h1>
-    <p>Four R Electrical & General Contractors LTD</p>
+    <h1>Employee Verification Profile</h1>
+    <p>4R Electrical & G. Cons. LTD</p>
   </div>
 
-  <div class="section">
-    <div class="label">Name</div>
-    <div class="value">AJHARUL ISLAM</div>
-  </div>
+  <div class="info-grid">
+    <div class="info-box">
+      <div class="label">Employee Name</div>
+      <div class="value">AJHARUL ISLAM</div>
+    </div>
 
-  <div class="section">
-    <div class="label">Position</div>
-    <div class="value">Excavator Operator</div>
-  </div>
+    <div class="info-box">
+      <div class="label">Position</div>
+      <div class="value">Excavator Operator</div>
+    </div>
 
-  <div class="section">
-    <div class="label">Experience</div>
-    <div class="value">1+ years heavy machinery operation</div>
-  </div>
+    <div class="info-box">
+      <div class="label">Experience</div>
+      <div class="value">5+ Years</div>
+    </div>
 
-  <div class="section">
-    <div class="label">Performance Rating</div>
-    <div class="rating-stars">★★★★☆ (4.5/5)</div>
-  </div>
-
-  <div class="section">
-    <div class="label">Work Quality</div>
-    <div class="value">Excellent, safe & punctual</div>
-  </div>
-
-  <div class="section">
-    <div class="label">Supervisor Comment</div>
-    <div class="value">“Very dependable and skilled operator.”</div>
-  </div>
-
-  <!-- APPLICATION / STATEMENT -->
-  <div class="section">
-    <div class="label">Official Statement</div>
-    <div class="application">
-      This is to certify that Mr. Ajharul Islam has been working with  
-      Four R Electrical & General Contractors LTD. as an Excavator Operator.  
-      He has demonstrated excellent operational skills, strong safety awareness,  
-      and a high level of responsibility in his assigned duties.  
-      Throughout his service period, his performance has been consistently satisfactory  
-      and he has maintained good professional conduct.  
-      We consider him a reliable and competent employee.
+    <div class="info-box">
+      <div class="label">Work Quality</div>
+      <div class="value">Excellent & Safe</div>
     </div>
   </div>
 
-  <div class="hr"></div>
-  <div class="footer">Verified by: Four R Electrical & General Contractors LTD.</div>
+  <div class="rating">
+    <div class="label">Performance Rating</div>
+    <div class="rating-stars">★★★★☆ 4.5 / 5</div>
+  </div>
+
+  <div class="statement-box">
+    <div class="statement-title">Official Employment Statement</div>
+    <div class="statement-text">
+      This is to certify that Mr. Ajharul Islam is employed with  
+      4R Electrical & G. Cons. LTD as an Excavator Operator.  
+      He has demonstrated strong professional skills, excellent safety awareness,  
+      and consistent performance in heavy machinery operations.  
+      His work attitude is disciplined, punctual, and reliable.  
+      Based on his overall performance and conduct, we consider him  
+      a competent and trustworthy employee of our organization.
+    </div>
+  </div>
+
+  <div class="footer">
+    This page is generated through official employee verification QR code.
+    <div class="verify">Verified by 4R Electrical & G. Cons. LTD</div>
+  </div>
+
 </div>
 
 </body>
