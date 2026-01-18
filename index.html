@@ -24,24 +24,23 @@ body {
   overflow: hidden;
 }
 
-/* ===== WATERMARK (CENTER PERFECT) ===== */
+/* ===== WATERMARK ===== */
 .watermark {
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 0;
 }
-
 .watermark img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 65%;
-  opacity: 0.19; /* চাইলে 0.06 – 0.12 */
+  opacity: 0.19;
 }
 
-/* Content above watermark */
+/* Content */
 .content {
   position: relative;
   z-index: 1;
@@ -100,20 +99,20 @@ body {
   font-weight: bold;
 }
 
-/* Statement */
-.statement-box {
-  margin-top: 20px;
-  padding: 16px;
-  background: #f9fbff;
+/* ===== APPLICATION / STATEMENT (NO BOX) ===== */
+.statement {
+  margin-top: 22px;
+  padding-left: 14px;
   border-left: 5px solid #2f80ed;
-  border-radius: 6px;
 }
+
 .statement-title {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 6px;
   color: #2f80ed;
 }
+
 .statement-text {
   font-size: 14px;
   line-height: 1.65;
@@ -142,7 +141,7 @@ body {
 
 <div class="container">
 
-  <!-- WATERMARK IMAGE -->
+  <!-- WATERMARK -->
   <div class="watermark">
     <img src="watermark.png" alt="Company Watermark">
   </div>
@@ -181,7 +180,8 @@ body {
       <div class="rating-stars">★★★★☆ 2.5 / 3</div>
     </div>
 
-    <div class="statement-box">
+    <!-- APPLICATION TEXT (DIRECT PAGE) -->
+    <div class="statement">
       <div class="statement-title">Official Employment Statement</div>
       <div class="statement-text">
         This is to certify that Mr. Ajharul Islam is employed with  
