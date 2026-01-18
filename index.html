@@ -24,20 +24,21 @@ body {
   overflow: hidden;
 }
 
-/* ===== WATERMARK ===== */
+/* ===== WATERMARK (CENTER PERFECT) ===== */
 .watermark {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   pointer-events: none;
   z-index: 0;
 }
 
 .watermark img {
-  max-width: 75%;
-  opacity: 0.08; /* চাইলে 0.06–0.12 পরিবর্তন করতে পারো */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 65%;
+  opacity: 0.08; /* চাইলে 0.06 – 0.12 */
 }
 
 /* Content above watermark */
@@ -141,7 +142,7 @@ body {
 
 <div class="container">
 
-  <!-- WATERMARK IMAGE (নিজের PNG এখানে দাও) -->
+  <!-- WATERMARK IMAGE -->
   <div class="watermark">
     <img src="watermark.png" alt="Company Watermark">
   </div>
